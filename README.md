@@ -1,4 +1,4 @@
-Projeto Digão Tour - Manicômio
+Projeto Digão Tour - Manicômio |                                                                                
 Integrantes: 
 João Pedro Rospirski,
 João Rafael Tedesqui,
