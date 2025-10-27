@@ -5,8 +5,7 @@ Site institucional desenvolvido para a **empresa de transporte Digão Tur**, com
 ---
 
 ## 🌐 Demonstração
-> *(Adicione aqui o link do GitHub Pages ou deploy, caso exista)*  
-`https://seuusuario.github.io/digao-tur/`
+> *https://digaotur.site*  
 
 ---
 
@@ -35,19 +34,6 @@ O site é composto por seções bem definidas:
 | **Responsividade** | Adaptável a diferentes tamanhos de tela |
 
 ---
-
-## 📁 Estrutura de Pastas
-
-├── imagens/
-│ ├── background-hero.jpg
-│ ├── onibus-servico1.jpg
-│ ├── onibus-servico2.jpg
-│ ├── onibus-servico3.jpg
-│ └── Logo Digão Tur Branca.png
-│
-├── index.html
-├── style.css
-└── README.md
 
 ## 👥 Integrantes do Projeto
 Cauã Buch Domingues
