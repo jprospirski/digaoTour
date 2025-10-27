@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html, body{
+    overflow-x: hidden; /* Remove o scroll horizontal */
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    background-color: #1c2c86;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+header{
+    background-color: #1c2c86;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+   flex-direction: row; /* Alinha em linha (padrão) */
+   justify-content:space-between; /* Alinha no eixo horizontal */
+   align-items: center; /* Alinha no eixo vertical */
+}
+
+.logo{
+    height: 60px;
+    padding: 1rem 2rem;
+}
+
+.navegacao{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    justify-content:end;
+}
+
+a {
+  text-decoration: none;  /* tira o sublinhado */
+  color: white;           /* deixa o texto branco */
+  font-weight: 300;       /* deixa a letra mais fina (quanto menor, mais fina) */
+}
+
+/* HERO */
+.hero {
+  position: relative;         /* torna o container o ponto de referência */
+  width: 100%;
+  height: 100vh;              /* ocupa a altura toda da tela */
+  overflow: hidden;           /* evita scroll lateral */
+}
+
+.background-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* imagem se ajusta sem distorcer */
+  display: block;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(24, 3, 158, 0.474), rgba(24, 3, 158, 0.047));
+  z-index: 1;
+}
+
+.logo-hero {
+  position: absolute;
+  top: 17%;
+  left: 12%;
+  width: 80%;               
+}
+
+/* conteúdo por cima do overlay */
+.hero img.logo-hero,
+.hero h1 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+
+/*SERVICOS*/
+section.servicos {
+  background: linear-gradient(180deg, #2f3eb8, #22329b);
+  color: #ffffff;
+  padding: 60px 0; /* remove padding lateral */
+  font-family: 'Poppins', sans-serif;
+  gap: 40px;
+}
+
+.serico1, .servico3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* alinha à esquerda */
+  gap: 60px;
+  justify-content: flex-start; 
+  flex-wrap: nowrap;
+}
+
+/* Imagem */
+.serico1 img, .servico3 img {
+  width: 800px;
+  max-width: 100%;
+  border-radius: 0px  40px 40px 0px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  margin-left: 0; /* garante que encoste na borda */
+  display: block;
+}
+
+h2 {
+  cursor: pointer;
+  font-size: 52px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+section.servicos h3 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.serico1 p, .servico3 p, .servico2 p {
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .serico1 , .servico3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .serico1 img , .servico3 img {
+  width: 90%;
+  max-width: 100%;
+  border-radius: 40px  44px 40px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  margin-left: 0; /* garante que encoste na borda */
+  display: block;
+}
+}
+
+ .servico2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* alinha à direita */
+  gap: 60px;
+  justify-content: flex-end; 
+  flex-wrap: nowrap;
+  margin: 100px 0px 100px 0px;
+}
+
+.servico2 img {
+  width: 800px;
+  max-width: 100%;
+  border-radius: 40px  0px 0px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  margin-left: 0; /* garante que encoste na borda */
+  display: block;
+}
+
+ .sobre {
+    color: white;
+    padding: 3% 10%;
+    text-align: center;
+    font-size: 40px;
+}
+
+ .redirect {
+    text-align: center;
+    font-size: 30px;
+}
+
+.redirect p {
+  padding: 1rem 0;
+}
+    .redirect button {
+    background: linear-gradient(180deg, #2f3eb8, #22329b);
+    color: white;
+    padding: 1.3rem 6rem;
+    font-size: 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+  .redirect button:hover {
+    background-color: #0421ff;
+    cursor: pointer;
+}
+
+
+  .final  {
+    background-color: #f7f7f7;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+  .final h2 {
+    color: #425eff;
+    font-weight: bold;
+  }
+
+.contato {
+    background-color: #f7f7f7;
+}
+
+.contato h2 {
+  color: black;
+  padding-top: 5rem;
+}
+
+footer {
+    background-color: #2e3192;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+footer img {
+    height: 10rem;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+}
