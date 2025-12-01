@@ -2,103 +2,145 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Digão Tur - Transporte seguro e confortável para viagens, turismo e empresas." />
+    <link rel="stylesheet" href="style.css" />
     <title>Digão Tur</title>
 </head>
 
 <body>
     <header class="cabecalho">
-        <div class="cabecalhoLogoContainer">
-            <img src="imagens/Logo Digão Tur Branca.png" alt="Logo Digão Tur" class="cabecalhoLogo">
+        <div class="container cabecalho-container">
+            <div class="cabecalho-logo-wrapper">
+                <img src="imagens/Logo Digão Tur Branca.png" alt="Logo Digão Tur" class="cabecalho-logo" />
+            </div>
+            <nav class="cabecalho-nav">
+                <ul class="cabecalho-lista">
+                    <li><a href="#inicio" class="cabecalho-link">Home</a></li>
+                    <li><a href="#servicos" class="cabecalho-link">Serviços</a></li>
+                    <li><a href="#sobre" class="cabecalho-link">Sobre</a></li>
+                    <li><a href="#contato" class="cabecalho-link">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="cabecalhoNav">
-            <ul class="cabecalhoNavLista">
-                <li><a href="#inicio" class="cabecalhoNavLink">Home</a></li>
-                <li><a href="#servicos" class="cabecalhoNavLink">Serviços</a></li>
-                <li><a href="#sobre" class="cabecalhoNavLink">Sobre</a></li>
-                <li><a href="#contato" class="cabecalhoNavLink">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section class="secaoHero" id="inicio">
-            <img src="imagens/background-hero.jpg" alt="Ônibus de viagem na estrada" class="secaoHeroImagemFundo">
-            <div class="secaoHeroSobreposicao"></div>
-            <img src="imagens/Logo Digão Tur Branca.png" alt="Logo Digão Tur" class="secaoHeroLogo">
-            <h1 class="secaoHeroTitulo">Conforto e segurança para suas viagens</h1>
-        </section>
-
-        <section class="secaoServicos" id="servicos">
-            <h2 class="tituloSecao">SERVIÇOS</h2>
-
-            <div class="itemServico itemServicoEsquerda">
-                <div class="itemServicoImagemContainer">
-                    <img src="imagens/onibus-servico1.jpg" alt="Ônibus moderno em uma rodovia" class="itemServicoImagem">
-                </div>
-                <div class="itemServicoConteudo">
-                    <h3 class="itemServicoTitulo">Viagens fretadas para todo o Brasil</h3>
-                    <p class="itemServicoDescricao">Traslados sob medida, do lazer ao corporativo.</p>
-                </div>
-            </div>
-
-            <div class="itemServico itemServicoDireita">
-                <div class="itemServicoConteudo">
-                    <h3 class="itemServicoTitulo">Translados sob medida, do lazer ao corporativo.</h3>
-                    <p class="itemServicoDescricao">Conforto e praticidade para empresas e passeios.</p>
-                </div>
-                <div class="itemServicoImagemContainer">
-                    <img src="imagens/onibus-servico2.jpg" alt="Ônibus da Digão Tur estacionado" class="itemServicoImagem">
-                </div>
-            </div>
-
-            <div class="itemServico itemServicoEsquerda">
-                <div class="itemServicoImagemContainer">
-                    <img src="imagens/onibus-servico3.jpg" alt="Interior de ônibus com poltronas confortáveis" class="itemServicoImagem">
-                </div>
-                <div class="itemServicoConteudo">
-                    <h3 class="itemServicoTitulo">Ônibus, micro-ônibus e vans modernas.</h3>
-                    <p class="itemServicoDescricao">Veículos revisados, climatizados e seguros.</p>
-                </div>
+        <section class="secao-hero" id="inicio">
+            <img src="imagens/background-hero.jpg" alt="Ônibus de viagem na estrada" class="hero-imagem-fundo" />
+            <div class="hero-sobreposicao"></div>
+            <div class="hero-conteudo">
+                <img src="imagens/Logo Digão Tur Branca.png" alt="Logo Digão Tur" class="hero-logo" />
+                <h1 class="hero-titulo">Conforto e segurança para suas viagens</h1>
             </div>
         </section>
 
-        <section class="secaoSobre" id="sobre">
-            <h2 class="tituloSecao">SOBRE NÓS</h2>
-            <p class="secaoSobreTexto">Na Digão Tur, trabalhamos para oferecer a melhor experiência em transporte de passageiros. Com anos de
-                atuação no setor, garantimos conforto, segurança e pontualidade em cada viagem. Nossa frota conta com
-                ônibus, micro-ônibus e vans equipadas com poltronas reclináveis, ar-condicionado, som ambiente e amplo
-                espaço para bagagens. Estamos preparados para atender viagens em família, excursões, turismo religioso,
-                eventos corporativos e muito mais.</p>
+        <section class="secao-servicos" id="servicos">
+            <div class="container">
+                <h2 class="titulo-secao">SERVIÇOS</h2>
+
+                <div class="card-servico">
+                    <div class="card-servico-imagem-wrapper">
+                        <img src="imagens/onibus-servico1.jpg" alt="Ônibus moderno em uma rodovia"
+                            class="card-servico-imagem" />
+                    </div>
+                    <div class="card-servico-conteudo">
+                        <h3 class="card-servico-titulo">
+                            Viagens fretadas para todo o Brasil
+                        </h3>
+                        <p class="card-servico-descricao">
+                            Traslados sob medida, do lazer ao corporativo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-servico card-servico-invertido">
+                    <div class="card-servico-conteudo">
+                        <h3 class="card-servico-titulo">Translados sob medida</h3>
+                        <p class="card-servico-descricao">
+                            Conforto e praticidade para empresas e passeios.
+                        </p>
+                    </div>
+                    <div class="card-servico-imagem-wrapper">
+                        <img src="imagens/onibus-servico2.jpg" alt="Ônibus da Digão Tur estacionado"
+                            class="card-servico-imagem" />
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div class="card-servico-imagem-wrapper">
+                        <img src="imagens/onibus-servico3.jpg" alt="Interior de ônibus com poltronas confortáveis"
+                            class="card-servico-imagem" />
+                    </div>
+                    <div class="card-servico-conteudo">
+                        <h3 class="card-servico-titulo">Frota moderna e equipada</h3>
+                        <p class="card-servico-descricao">
+                            Veículos revisados, climatizados e seguros.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="secaoContato" id="contato">
-            <h2 class="tituloSecao tituloSecaoEscuro">CONTATO</h2>
-            <div class="secaoContatoGrupoRedirecionamento">
-                <p class="secaoContatoTexto">Entre em contato diretamente pelo WhatsApp para solicitar orçamentos e tirar dúvidas</p>
-                <a href="https://wa.me/SEUNUMERO" target="_blank" class="botao">CLIQUE AQUI</a>
-            </div>
-            <div class="secaoContatoGrupoRedirecionamento">
-                <p class="secaoContatoTexto">Preencha nosso formulário e garanta sua vaga no transporte para faculdades e escolas em 2026</p>
-                <a href="#" class="botao">CLIQUE AQUI</a>
+        <section class="secao-sobre" id="sobre">
+            <div class="container">
+                <h2 class="titulo-secao">SOBRE NÓS</h2>
+                <p class="texto-sobre">
+                    Na Digão Tur, trabalhamos para oferecer a melhor experiência em
+                    transporte de passageiros. Com anos de atuação no setor, garantimos
+                    conforto, segurança e pontualidade em cada viagem. Nossa frota conta
+                    com ônibus, micro-ônibus e vans equipadas com poltronas reclináveis,
+                    ar-condicionado, som ambiente e amplo espaço para bagagens. Estamos
+                    preparados para atender viagens em família, excursões, turismo
+                    religioso, eventos corporativos e muito mais.
+                </p>
             </div>
         </section>
 
-        <section class="secaoChamadaFinal">
-            <h2 class="secaoChamadaFinalTitulo">Venha fazer parte da<br>família Digão Tur</h2>
+        <section class="secao-contato" id="contato">
+            <div class="container">
+                <h2 class="titulo-secao titulo-escuro">CONTATO</h2>
+
+                <div class="card-contato">
+                    <p class="texto-contato">
+                        Entre em contato diretamente pelo WhatsApp para solicitar
+                        orçamentos e tirar dúvidas
+                    </p>
+                    <a href="https://wa.me/+554599792936" target="_blank" class="botao">CHAMAR NO WHATSAPP</a>
+                </div>
+
+                <div class="card-contato">
+                    <p class="texto-contato">
+                        Garanta sua vaga no transporte universitário/escolar
+                        <span id="ano-letivo-dinamico"></span>
+                    </p>
+                    <a href="#" class="botao">PREENCHER FORMULÁRIO</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-chamada-final">
+            <div class="container">
+                <h2 class="titulo-chamada-final">
+                    Venha fazer parte da<br />família Digão Tur
+                </h2>
+            </div>
         </section>
     </main>
 
     <footer class="rodape">
-        <img src="imagens/Logo Digão Tur Branca.png" alt="Logo Digão Tur" class="rodapeLogo">
-        <div class="rodapeInfoContato">
-            <p class="rodapeTituloContato">(45) 99979-2936 / (45) 99924-7995</p>
+        <div class="container">
+            <img src="imagens/Logo Digão Tur Branca.png" alt="Logo Digão Tur" class="rodape-logo" />
+            <div class="rodape-info">
+                <p class="rodape-texto">(45) 99979-2936 / (45) 99924-7995</p>
+            </div>
+            <p class="rodape-copyright">&copy; DIGÃO TUR & Manicomio</p>
+            <p class="rodape-reservado">Todos os direitos reservados</p>
         </div>
-        <p class="rodapeDireitos">&copy; DIGÃO TUR & Manicomio</p>
-        <p class="rodapeReservado">Todos os direitos reservados</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
